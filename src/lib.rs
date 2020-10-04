@@ -14,8 +14,8 @@ pub mod readme {
 //TODO: Support ::before and the like.
 #[must_use]
 pub fn scope_css(input: &str, selector: &str) -> String {
-	let mut processed = 0usize;
-	let mut whitespace_start = 0usize;
+	let mut processed = 0_usize;
+	let mut whitespace_start = 0_usize;
 	let mut at_found = false;
 	let mut result = String::with_capacity(2 * input.len());
 
