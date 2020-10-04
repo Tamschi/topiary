@@ -26,7 +26,7 @@ cargo add topiary
 ## Example
 
 ```rust
-TODO_EXAMPLE
+// TODO_EXAMPLE
 ```
 
 ## License
