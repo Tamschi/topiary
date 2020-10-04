@@ -1,6 +1,15 @@
+//! **This is a very experimental and unstable library! There WILL be breaking changes.**
+
+#![doc(html_root_url = "https://docs.rs/topiary/0.0.1")]
 #![forbid(unsafe_code)]
+#![warn(clippy::pedantic)]
 
 use std::iter::FromIterator;
+
+#[cfg(doctest)]
+pub mod readme {
+	doc_comment::doctest!("../README.md");
+}
 
 //TODO: Support ::before and the like.
 pub fn scope_css(input: &str, selector: &str) -> String {
